@@ -1,0 +1,602 @@
+/*  --veriable--  */
+:root{
+    --primary-color: #0000ff;
+    --h-text:#5b5b98;
+    --background-color:#f4f7fc;
+    --white-color: #fff; 
+    --black-color: #000;
+    --pink-color:#fa7070;
+    --gray-color:#f9f5f5;
+    --yellow-color:#facd60;
+    --sky-color: #1ac0c6;
+    --sb2-color:#00aeff;
+    --sb3-color:#f78acb;
+    --sb4-color:#44ce6f;
+    --sb5-color:#c679e3;
+    --sb6-color:#eb6b3d;
+
+
+}
+
+/* ---body--- */
+*{
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Overpass';
+}
+
+img{
+    max-width: 100%;   
+}
+
+ul{
+    list-style: none;
+}
+
+.con{
+    max-width: 1320px;
+    margin: 0px auto;   
+    padding: 0px 25px;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.col-1{
+    width: 8.33%;
+}
+
+.col-2{
+    width: 16.66%;
+}
+
+.col-3{
+    width: 25%;
+}
+
+.col-4{
+    width: 33.33%;
+}
+
+.col-5{
+    width: 41.66%;
+}
+
+.col-6{
+    width: 50%;
+}
+
+.col-7{
+    width:58.33%;
+}
+
+.col-8{
+    width: 66.66%;
+}
+
+.col-9{
+    width: 75%;
+}
+
+.col-10{
+    width: 83.33%;
+}
+
+.col-11{
+    width: 91.66%;
+}
+
+.col-12{
+    width: 100%;
+}
+
+/* --componat-- */
+.btn{
+        border: 1px solid transparent;
+        text-align: center;
+        overflow: hidden;
+        z-index: -1;
+        color: var(--white-color);
+        text-transform: uppercase;
+        background-color: var(--primary-color);
+        transition: all 0.5s;
+        border-radius: 5px;
+        font-weight: 600;
+        font-size: 15px;
+        padding-left: 35px;
+        padding-right: 35px;
+        padding-top: 17px;
+        padding-bottom: 13px;
+}
+.heading{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.heading p{
+    font-size: 15px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: var(--primary-color);
+    text-transform: uppercase;
+}
+.heading h2{
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--black-color);
+    margin: 0 auto;
+    max-width: 550px;
+    text-transform:capitalize;
+}
+.sub{
+    text-align: center;
+}
+
+.sub h3{
+    color: var(--black-color);
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 26.4px;
+    text-transform: capitalize;
+}
+.sub p{
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--h-text);
+    line-height: 1.8;
+    text-transform: lowercase;
+}
+
+/* --header-- */
+header{
+    background-color: var(--white-color);
+    width: 100%;
+    position: fixed;
+    z-index: 9;
+    /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19); */
+}
+
+nav{
+    align-items: center;
+    padding: 10px;
+}
+
+header .row{
+    justify-content: space-between;
+    padding: 10px;   
+}
+
+header .row nav ul{
+    display: flex;
+}
+nav ul li{
+    padding: 0px 20px;
+}
+
+header .row nav ul li i {
+    font-size: 10px;
+    top: 1px;
+    margin-left: 4px;
+}
+
+header .row nav ul li a{
+    color: var(--h-text);
+    font-size: 16px;
+    transition: all 0.5s;
+}
+
+header .row nav ul li a:hover,
+.other-option .fa-magnifying-glass:hover{
+    color: var(--primary-color);
+}
+
+
+.other-option .fa-magnifying-glass{
+    font-size: 16px;
+    color: var(--h-text);
+    margin-left: 10px;
+}
+
+.link{
+    position: relative;
+}
+
+.submenu{
+    position: absolute;
+    background-color: var(--white-color);
+    top: 250%;
+    flex-direction: column;
+    padding: 20px 20px 20px 0px;
+    width: max-content;
+    border-top: 2px solid blue;
+    box-shadow: 0px 0 15px 0 rgba(0, 0, 0, 0.1);
+    opacity: 0; 
+    visibility: hidden;
+    transition: all 0.5s;
+} 
+
+.submenu li{
+    padding: 10px;
+}
+
+.link:hover .submenu{
+    opacity: 1;
+    top: 200%;
+    visibility:visible;
+    /* z-index: 1; */
+}
+
+/* --- benner --- */
+.benner{    
+    background-color: var(--gray-color);
+    padding: 240px 0 0;
+}
+.benner-can{
+    text-align: center;
+    max-width: 790px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 70px;
+}
+.benner-can p{
+    color: var(--primary-color);
+    display: block;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.benner h1{
+    font-size: 60px;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+.benner-can .btn{
+    margin-top: 25px;
+} 
+.benner-can .btn:hover{
+    background-color: #fa7070;
+}
+
+
+/* ------ services ------- */
+
+.service{
+    padding:100px 0 70px;
+}
+
+.service .sub-ser{
+    margin:0 15px 0;
+    text-align: center;
+    background-color: var(--gray-color);
+    height: auto;
+    padding: 35px 25px;
+    transition: all 0.5s;   
+}
+.service .sub-ser:hover{
+    transform: translateY(-10px);
+    background-color: var(--white-color);
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.1);
+}
+
+.sub-ser .fa-chart-column {
+    color: var(--pink-color);
+    font-size: 45px;
+    line-height: 67.5px;
+    text-align: center;
+    /* font-weight: 400; */
+}
+
+.sub-ser .fa-envelope-open-text {
+    color: var(--yellow-color);
+    font-size: 45px;
+    line-height: 67.5px;
+    text-align: center;
+    /* font-weight: 400; */
+}
+
+.sub-ser .fa-laptop-code {
+    color: var(--sky-color);
+    font-size: 45px;
+    line-height: 67.5px;
+    text-align: center;
+    /* font-weight: 400; */
+}
+
+.sub-ser .btn{
+        background-color: transparent;
+        border: 2px solid var(--primary-color);
+        color: var(--primary-color);
+        transition: all 0.5s;
+}
+
+.sub-ser:hover .btn{
+    background-color: var(--primary-color);
+    color: var(--white-color);
+
+}
+.sub-ser .sub p{
+    margin-top: 15px;
+    margin-bottom: 70px;
+}
+
+/* ------ about ----- */
+
+.about{
+    padding: 100px 0 70px;
+}
+.about-txt .heading h2{
+    margin: 0px;
+}
+
+.about-txt{
+    padding-left: 35px ;
+}
+.about-txt .sub p,
+.about-txt .heading{
+    text-align: left;
+}
+
+.about-txt ul li{
+    position: relative;
+    z-index: 1;
+    padding: 13px 5px 13px 40px;
+    margin: 0 10px 10px;
+    border-radius: 4px;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+.about-txt ul li:hover{
+    color: var(--white-color);
+}
+
+.ab-list li::after{
+    background-color: var(--primary-color);
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    transition: all 0.5s;
+    height: 100%;
+    width: 0;
+    z-index: -1;
+}
+
+.ab-list li:hover::after{
+    width: 100%;
+}
+
+.about-txt .ab-list i{
+    background-color: var(--primary-color);
+    padding: 3px;
+    font-size: 13px;
+    margin-right: 10px;
+    border-radius: 2px;
+    transition: all 0.5s;
+    color: var(--white-color);
+}
+
+.ab-list li:hover i{
+    background-color: var(--pink-color);
+}
+
+.ab-list li{
+    font-size: 15px;
+    font-weight: 600;
+}
+
+
+/* ------ tool ----------- */
+
+.tool{
+    padding: 100px 0 70px;
+    background-color: var(--background-color);
+}
+.tl-list{
+    background-color: var(--gray-color);
+    padding: 40px 30px;
+    transition: all 0.5s;
+    z-index: 1;
+    height: max-content;
+    position: relative;
+    margin: 0 15px 30px;
+}
+.tl-list:hover{
+    transform: translateY(-10px);
+}
+.tl-list::after{
+    background-color: var(--primary-color);
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    transition: all 0.5s;
+    height: 100%;
+    width: 0;
+    z-index: -1;
+}
+
+.tl-list:hover::after{
+    width: 100%;
+}
+.tl-list h3{
+    text-align: left;
+    transition: all 0.5s;
+}
+
+.tl-list p{
+    transition: all 0.5s;
+    text-align: left;
+}
+
+.tl-list i{
+    margin: 0 0 25px;
+    padding: 22px 0 0 0;
+    font-size: 35px;
+    /* color: var(--pink-color); */
+    width: 75px;
+    /* background-color: rgba(232, 96, 134, 10%); */
+    height: 75px;
+    border-radius: 50%;
+    transition: all 0.5s;
+    text-align: center;
+}
+
+.tl-list .fa-computer{
+    color: var(--pink-color);
+    background-color: rgba(250, 112, 112, 10%);
+}
+.tl-list .fa-laptop-code{
+    color: var(--sb2-color);
+    background: rgba(68, 206, 111, 10%);
+}
+.tl-list .fa-chart-line{
+    color: var(--sb3-color);
+    background-color: rgba(247, 138, 203, 10%);
+}
+.tl-list .fa-chalkboard-user{
+    color: var(--sb4-color);
+    background: rgba(68, 206, 111, 10%);
+}
+.tl-list .fa-envelopes-bulk{
+    color: var(--sb5-color);
+    background: rgba(198, 121, 227, 10%);    
+}
+.tl-list .fa-digital-ocean{
+    color: var(--sb6-color);
+    background: rgba(235, 107, 61, 10%);
+}
+
+.tl-list:hover i{
+    color: var(--primary-color);   
+    background-color: var(--white-color);
+    transform: rotate(360deg)
+}
+.tl-list a{
+    transition: all 0.5s;
+    font-size: 16px;
+}
+.tl-list:hover p,
+.tl-list:hover h3,
+.tl-list:hover a{
+    color: var(--white-color);
+}
+
+.tl-btn{
+    transform: translateY(20px);
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+}
+.tl-list:hover .tools-btn{
+    transform: translateY(0);
+    visibility: visible;
+    opacity: 1;
+}
+.tl-btn::after{
+    position: absolute;
+    content: "";
+    bottom: 0;
+    transition: all 0.5s;
+    left: 0;
+    background: #f9f5f5;
+    height: 2px;
+    width:0;
+}
+.tl-btn:hover::after{
+    width: 100%;
+}
+
+/* ------- choose ----- */
+.choose{
+    padding: 100px 0 ;
+}
+
+.choose .heading h2{
+    margin: 0px;
+}
+.choose .heading, 
+.choose .sub {
+    text-align: left;
+}
+
+.choose .txt{
+    margin: 25px 0 0;
+}
+
+.choose .txt h4 i{
+    margin-right: 5px;
+    color: var(--primary-color);
+}
+
+/* ----- number ------ */
+.number{
+    background-color: var(--primary-color);
+    padding: 100px 0px;
+}
+.number .pro{
+    border: 1px dashed rgba(255, 255, 255, 40%) ;
+    width: 250px;
+    height: 150px;
+    text-align: center;
+    padding-top: 25px;
+    color: var(--white-color);
+    transition: all 0.5s;
+    position: relative;
+    z-index: 1;
+}
+
+.pro:hover{
+    border-color: var(--white-color);
+    transform:translateY(-10px) ;
+}
+
+.number .pro::before{
+    position: absolute;
+    content: "P";
+    color: rgba(31, 37, 158, 0.5);
+    opacity: 0.5;
+    font-size: 150px;
+    z-index: -1;
+    top: -10px;
+    right: 100px;
+    font-style: italic; 
+}
+.number .pro-2::before{
+    content: "C";
+   
+}
+.number .pro-3::before{
+    content: "A";
+   
+}
+.number .pro-4::before{
+    content: "E";
+   
+}           
+
+
+
+.number .pro h2{
+    font-size: 50px;
+}
+.number .pro h2 + p{
+    font-size: 17px;
+    margin: 5px 0px 15px;
+}
+.number .pro .plus{
+    font-size: 18px;
+}
+
