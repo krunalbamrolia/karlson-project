@@ -500,7 +500,7 @@ header .row nav ul li a:hover,
     visibility: hidden;
     opacity: 0;
 }
-.tl-list:hover .tools-btn{
+.tl-list:hover .tl-btn{
     transform: translateY(0);
     visibility: visible;
     opacity: 1;
@@ -586,9 +586,6 @@ header .row nav ul li a:hover,
     content: "E";
    
 }           
-
-
-
 .number .pro h2{
     font-size: 50px;
 }
@@ -600,3 +597,132 @@ header .row nav ul li a:hover,
     font-size: 18px;
 }
 
+
+/* ------gallery-------- */
+.gallery{
+    margin: 100px 0 70px;
+}
+.gallery .sl-card{
+    margin: 0 15px;
+    overflow: hidden;
+    position: relative;
+}
+
+.gallery .slider{
+    position: relative;
+    
+}
+
+.sl-card i{
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    font-size: 40px;
+    padding: 20px;
+    color: var(--white-color);
+    transform: scale(0);
+    transition: all 0.5s;
+}
+.sl-card:hover i{
+    transform: scale(1);
+}
+
+.sl-card .icon{
+    position: absolute;
+    left: 0px;
+    bottom: 45px;
+    padding: 25px 20px 20px;
+    background-color: var(--white-color);
+    width: 70%;
+    transform: translateX(-500px);
+    transition: all 0.5s;
+}
+
+.sl-card:hover .icon{
+    transform: translateX(0px);
+}
+.sl-card i:hover{
+    background-color: var(--pink-color);
+}
+
+.icon h3:hover{
+    color: var(--primary-color);
+}
+
+
+
+/* ---------feature---------- */
+.feature{
+    margin: 100px 0 70px;
+}
+
+.fa-people-group .a1{
+        font-size: 15px;
+}
+
+.fet-txt .heading p{
+    text-transform:capitalize;
+}
+
+.fet-txt .heading h2{
+    margin: 0px;
+}
+
+.fet-txt{
+    padding-left: 35px ;
+}
+.fet-txt .sub p,
+.fet-txt .heading{
+    text-align: left;
+}
+
+.fet-txt ul li{
+    position: relative;
+    z-index: 1;
+    padding: 13px 5px 13px 40px;
+    margin: 0 10px 10px;
+    border-radius: 4px;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+.fet-txt ul li:hover{
+    color: var(--white-color);
+}
+
+.fet-list li::after{
+    background-color: var(--primary-color);
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    transition: all 0.5s;
+    height: 100%;
+    width: 0;
+    z-index: -1;
+}
+
+.fet-list li:hover::after{
+    width: 100%;
+}
+
+.fet-txt .fet-list i{
+    background-color: var(--primary-color);
+    padding: 3px;
+    font-size: 13px;
+    margin-right: 10px;
+    border-radius: 2px;
+    transition: all 0.5s;
+    color: var(--white-color);
+}
+
+.fet-list li:hover i{
+    background-color: var(--pink-color);
+}
+
+.fet-list li{
+    font-size: 15px;
+    font-weight: 600;
+}
